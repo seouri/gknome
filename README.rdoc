@@ -1,1 +1,8 @@
 = gKnome
+
+== Set Up
+
+ $ git clone git://github.com/seouri/gknome.git
+ $ cd gknome
+ $ bundle install
+ $ cp config/database.yml.mysql config/database.yml
