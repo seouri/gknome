@@ -6,3 +6,4 @@
  $ cd gknome
  $ bundle install
  $ cp config/database.yml.mysql config/database.yml
+ $ rake db:setup
