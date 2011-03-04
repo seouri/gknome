@@ -27,6 +27,7 @@
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#356), to(#023));
   color: #fff;
   font-size: 0.8em;
+  xposition: fixed;
 }
 
 #navigation {
