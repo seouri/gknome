@@ -2,13 +2,61 @@
 <html>
 <head>
   <title>gKnome</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link  href="http://fonts.googleapis.com/css?family=Philosopher:regular" rel="stylesheet" type="text/css" >
+
+	<%= stylesheet_link_tag "1140", :media => "screen" %>
+	<!--[if lte IE 9]>
+	<%= stylesheet_link_tag "ie", :media => "screen" %>
+	<![endif]-->
+	
+	<!-- Type and image presets - NOT ESSENTIAL -->
+	<%= stylesheet_link_tag "typeimg", :media => "screen" %>
+	<!-- Make minor type adjustments for 1024 monitors --> 
+	<%= stylesheet_link_tag "smallerscreen", :media => "only screen and (max-width: 1023px)" %>
+
+	<!-- Resets grid for mobile -->
+	<%= stylesheet_link_tag "mobile", :media => "handheld, only screen and (max-width: 767px)" %>
+	
+	<!-- Put your layout here --> 
+	<%= stylesheet_link_tag "layout", :media => "screen" %>
+
+  <%= stylesheet_link_tag "screen", :media => "screen" %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+  <div class="container" id="header">
+  	<div class="row">
+  		<div class="sixcol">
+  			<span class="logo"><%= link_to 'gKnome', root_path %></span>
+  			<span class="tagline">Whole Genome Sequencing Annotation Pipeline</span>
+  		</div>
+  		<div class="sixcol last">
+  		  <ul id="navigation">
+  		    <li><%= link_to 'About' %></li>
+  		    <li><%= link_to 'Sigin in'%></li>
+  		    <li><%= link_to 'Sigin up'%></li>
+  		  </ul>
+  		</div>
+  	</div>
+  </div>
+  <div class="container" id="body">
 <%= yield %>
-
+  </div>
+  <div class="container" id="footer">
+  	<div class="row">
+  		<div class="fourcol">
+  		  <span>Children's Hospital Informatics Program</span>
+  		</div>
+  		<div class="fourcol">
+  		  <span>Harvard-MIT Division of Health Sciences and Technology</span>
+  		</div>
+  		<div class="fourcol last">
+  		  <span>Harvard Medical School</span>
+  		</div>
+  	</div>
+  </div>
 </body>
 </html>
