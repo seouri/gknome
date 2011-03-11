@@ -8,6 +8,15 @@ body {
 /* Layout for mobile version */
 
 @media handheld, only screen and (max-width: 767px) {
+  h1.home{
+    text-align: center;
+  }
+  h1.home span.tagline {
+   font-size: 0.35em;
+   white-space: normal;
+   display: block;
+   line-height: 1.25em;
+  }
   h3.scenario {
     height: 1em;
     margin: 0em;
