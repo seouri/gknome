@@ -20,7 +20,9 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
+#body h2 {
+  margin: 0;
+}
 #footer {
   background-color: #356;
   background: -moz-linear-gradient(top, #356 0%, #023 100%);
@@ -108,7 +110,7 @@ button.clean-gray:active {
 
 h3.scenario {
   height: 2em;
-  margin: 1em 0 0 0;
+  margin: 1.5em 0 0 0;
   line-height: 1em;
 }
 ol.modules {
