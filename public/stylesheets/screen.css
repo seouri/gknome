@@ -21,7 +21,7 @@
   padding-bottom: 1em;
 }
 #body h2 {
-  margin: 0;
+  margin: 2em 0 0 0;
 }
 #footer {
   background-color: #356;
@@ -110,7 +110,7 @@ button.clean-gray:active {
 
 h3.scenario {
   height: 2em;
-  margin: 1.5em 0 0 0;
+  margin: 0;
   line-height: 1em;
 }
 ol.modules {
@@ -122,8 +122,11 @@ ol.modules {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  height: 12em;
+  min-height: 12em;
   margin: 0.5em 0;
   padding: 0.5em;
   list-style: none;
+}
+ol.modules li {
+  line-height: 1.5em;
 }

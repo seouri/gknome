@@ -8,8 +8,13 @@ body {
 /* Layout for mobile version */
 
 @media handheld, only screen and (max-width: 767px) {
-
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  h3.scenario {
+    height: 1em;
+    margin: 0em;
+    padding: 2em 0 0 0;
+    line-height: 1em;
+  }
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     width: auto;
     float: none;
     margin-left: 0px;
@@ -18,13 +23,9 @@ body {
     padding-right: 5px;
   }
 
-  h3.scenario {
-    height: 1em;
-    margin: 0;
-    padding: 0;
-    line-height: 1em;
+  ol.modules {
+    min-height: 1em;
   }
-
 }
 
 
