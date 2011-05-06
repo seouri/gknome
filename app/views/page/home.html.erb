@@ -2,13 +2,14 @@
 	<div class="twelvecol">
 	  <h1 class="home"><span class="logo">gKnome</span>
 		<span class="tagline">Whole Genome Sequencing Analysis Pipeline</span></h1>
-    <h2>Analysis Scenarios</h2>
-    <p>We provide the following six pre-defined analysis scenarios, each of which has different combination of analysis modules. You can also <%= link_to "select your own combination of analysis modules" %>.</p>
+    <h1>Disease Enrichment Analysis</h1>
+    <h2>Analysis Pipelines</h2>
+    <p>We provide the following six pre-defined analysis pipelines, each of which has different combination of analysis modules. You can also <%= link_to "select your own combination of analysis modules" %>.</p>
   </div>
 </div>
 <div class="row">
 	<div class="twocol">
-	  <h3 class="scenario">Case / Control</h3>
+	  <h3 class="pipeline">Case / Control</h3>
 	  <ol class="modules">
       <li>Allele Frequency</li>
       <li>Functional Annotation</li>
@@ -16,20 +17,20 @@
       <li>Biological Process &amp; Pathway</li>
       <li>Allele Zygosity</li>
 	  </ol>
-	  <button class="clean-gray">Start!</button>
+	  <button class="pipeline">Start!</button>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Cases only</h3>
+	  <h3 class="pipeline">Cases only</h3>
 	  <ol class="modules">
       <li>Allele Frequency</li>
       <li>Functional Annotation</li>
       <li>Disease Association</li>
       <li>Biological Process &amp; Pathway</li>
 	  </ol>
-	  <button class="clean-gray">Start!</button>
+	  <button class="pipeline">Start!</button>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Rare disease with known cause</h3>
+	  <h3 class="pipeline">Rare disease with known cause</h3>
 	  <ol class="modules">
       <li>Allele Frequency</li>
       <li>Functional Annotation</li>
@@ -38,10 +39,10 @@
       <li>Disease Association</li>
       <li>Biological Process &amp; Pathway</li>
 	  </ol>
-	  <button class="clean-gray">Start!</button>
+	  <button class="pipeline">Start!</button>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Rare disease with unknown cause</h3>
+	  <h3 class="pipeline">Rare disease with unknown cause</h3>
 	  <ol class="modules">
       <li>Allele Frequency</li>
       <li>Sequence Features</li>
@@ -49,20 +50,20 @@
       <li>Biological Process &amp; Pathway</li>
       <li>Disease Association</li>
 	  </ol>
-	  <button class="clean-gray">Start!</button>
+	  <button class="pipeline">Start!</button>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Family study</h3>
+	  <h3 class="pipeline">Family study</h3>
 	  <ol class="modules">
       <li>Allele Zygosity</li>
       <li>Sequence Features</li>
       <li>Biological Process &amp; Pathway</li>
       <li>Disease Association</li>
 	  </ol>
-	  <button class="clean-gray">Start!</button>
+	  <button class="pipeline">Start!</button>
 	</div>
 	<div class="twocol last">
-	  <h3 class="scenario">Healthy</h3>
+	  <h3 class="pipeline">Healthy</h3>
 	  <ol class="modules">
       <li>Allele Frequency</li>
       <li>Sequence Features</li>
@@ -70,20 +71,20 @@
       <li>Biological Process &amp; Pathway</li>
       <li>Disease Association</li>
 	  </ol>
-	  <button class="clean-gray">Start!</button>
+	  <button class="pipeline">Start!</button>
 	</div>
 </div>
 
 <div class="row">
 	<div class="twelvecol">
-    <h2>Analysis Modules</h2>
-    <p>We provide the following six analysis modules, which can be used by itself or in combination with other modules as in the analysis scenarios.</p>
+    <h2 class="module">Analysis Modules</h2>
+    <p>We provide the following six analysis modules, which can be used by itself or in combination with other modules as in the analysis pipelines.</p>
   </div>
 </div>
 
 <div class="row">
 	<div class="twocol">
-	  <h3 class="scenario">Allele Frequency</h3>
+	  <h3 class="module">Allele Frequency</h3>
 	  <ol class="components">
 	    <li>dbSNP132</li>
 	    <li>1000 genomes</li>
@@ -92,7 +93,7 @@
 	  </ol>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Functional Annotation</h3>
+	  <h3 class="module">Functional Annotation</h3>
 	  <ol class="components">
       <li>Coding genes (RefSeq)</li>
       <li>Non-coding (miRNA, TFBS)</li>
@@ -100,14 +101,14 @@
 	  </ol>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Biological Process &amp; Pathway</h3>
+	  <h3 class="module">Biological Process &amp; Pathway</h3>
 	  <ol class="components">
 	    <li>Pathways</li>
 	    <li>GO terms</li>
 	  </ol>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Disease Association</h3>
+	  <h3 class="module">Disease Association</h3>
 	  <ol class="components">
 	    <li>HGMD</li>
 	    <li>GWAS</li>
@@ -117,14 +118,14 @@
 	  </ol>
 	</div>
 	<div class="twocol">
-	  <h3 class="scenario">Allele Zygosity</h3>
+	  <h3 class="module">Allele Zygosity</h3>
 	  <ol class="components">
 	    <li>homozygous</li>
 	    <li>heterozygous</li>
 	  </ol>
 	</div>
 	<div class="twocol last">
-	  <h3 class="scenario">Sequence Features</h3>
+	  <h3 class="module">Sequence Features</h3>
 	  <ol class="components">
 	    <li>Conservations (PhastCons)</li>
 	    <li>Repeat</li>

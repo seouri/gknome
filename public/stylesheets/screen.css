@@ -121,20 +121,70 @@ button.clean-gray:active {
   -webkit-box-shadow: inset 0 0 5px 2px #aaa, 0 1px 0 0 #eee;
   box-shadow: inset 0 0 5px 2px #aaa, 0 1px 0 0 #eee;
 }
+
+
+
+button.pipeline {
+  background: #467;
+  background: -moz-linear-gradient(top, #467 0%, #023 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#467), to(#023));
+  border: 1px solid #356;
+  border-bottom: 1px solid #023;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 8px 0;
+  text-align: center;
+  text-shadow: 0 1px 0 #356;
+  width: 100%;
+}
+
+button.pipeline:hover {
+  background: #578;
+  background: -moz-linear-gradient(top, #578 0%, #bbb 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#578), to(#134));
+  border: 1px solid #134;
+  border-bottom: 1px solid #023;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #356;
+}
+
+button.pipeline:active {
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #888;
+  -moz-box-shadow: inset 0 0 5px 2px #aaa, 0 1px 0 0 #eee;
+  -webkit-box-shadow: inset 0 0 5px 2px #aaa, 0 1px 0 0 #eee;
+  box-shadow: inset 0 0 5px 2px #aaa, 0 1px 0 0 #eee;
+}
 h1.home {
   padding: 0.25em 0 0 0;
   font-size: 4em;
   line-height: 1em;
 }
-h3.scenario {
+h3.pipeline {
   height: 2em;
   margin: 0;
   line-height: 1em;
 }
-ol.modules, ol.components {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-bottom: 1px solid #bbb;
+h3.module {
+  height: 2em;
+  margin: 0;
+  line-height: 1em;
+}
+.module {
+  color: #653;
+}
+ol.modules {
+  background-color: #356;
+  background: -moz-linear-gradient(top, #356 0%, #245 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#356), to(#245));
+  border: 1px solid #245;
+  border-bottom: 1px solid #023;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -144,17 +194,55 @@ ol.modules, ol.components {
   list-style: none;
 }
 ol.components {
+  background-color: #edb;
+  background: -moz-linear-gradient(top, #edb 0%, #ba8 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edb), to(#ba8));
+  border: 1px solid #cb9;
+  border-bottom: 1px solid #a97;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   min-height: 9em;
+  margin: 0.5em 0;
+  padding: 0.25em 0.25em 0 0.25em;
+  list-style: none;
 }
-ol.modules li, ol.components li {
+ol.modules li {
   line-height: 1.5em;
-  background: -moz-linear-gradient(top, #eee 0%, #ccc 100%);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
-  border: 1px solid #ccc;
+  background: -moz-linear-gradient(top, #edb 0%, #cb9 100%);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edb), to(#cb9));
+  border: 1px solid #cb9;
   border-bottom: 1px solid #bbb;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 0 0.25em;
   font-size: 0.85em;
+  color: #653;
+  font-weight: bold;
+}
+ol.components li {
+  line-height: 1.5em;
+  border: 1px solid #a97;
+  border-bottom: 1px solid #a97;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 0.25em;
+  font-size: 0.85em;
+  color: #986;
+}
+.test tr {
+  border-bottom: 1px solid #356;
+}
+.test td {
+  text-align: center;
+  margin: 0;
+}
+.test th {
+  color: #fff;
+  background-color: #356;
+  margin: 0;
+  padding: 0.25em;
+  line-height: 1.3em;
 }
