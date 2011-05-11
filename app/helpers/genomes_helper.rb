@@ -32,7 +32,7 @@ module GenomesHelper
   end
 
   def bar_graph_log(title, data, x_labels)
-    data = data.map{|d| Math.log10(d)}
+    data = data.map{|d| Math.log10(d).round(2)}
     y_max = data.max.ceil
     y_min = data.min.floor
     y_min = 0
@@ -40,6 +40,6 @@ module GenomesHelper
     bar_width = 40
     bar_spacing = 25
     chart_width = (bar_width + bar_spacing) * data.size + 20
-    Gchart.line(:size => "#{chart_width}x250", :title => title, :data => data, :axis_with_labels => "x,y", :axis_labels => [x_labels, y_labels], :bar_width_and_spacing => "#{bar_width},#{bar_spacing}", :bar_colors => "335566", :custom => "chds=#{y_min},#{y_max}&chg=#{100.0 / (data.size - 1)},#{100.0 / (y_labels.size - 1)}", :encoding => "text", :format => "image_tag").html_safe
+    Gchart.line(:size => "#{600}x250", :title => title, :data => data, :axis_with_labels => "x,y", :axis_labels => [x_labels, y_labels], :axis_range => [[0, 10]], :bar_width_and_spacing => "#{bar_width},#{bar_spacing}", :bar_colors => "335566", :custom => "chds=#{y_min},#{y_max}&chg=#{(100.0 / (data.size - 1)).round(3)},#{(100.0 / (y_labels.size - 1)).round(3)}", :format => "image_tag").html_safe
   end
 end
