@@ -20,7 +20,9 @@ body {
 #header a:hover {
   color: #fea;
 }
-
+#header .last, #footer .last {
+  text-align: right;
+}
 #body {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -55,7 +57,7 @@ body {
 
 #navigation a {
   display: block;
-  padding-right: 2em;
+  xpadding-right: 2em;
 }
 
 .logo {
@@ -80,7 +82,10 @@ h2 {
 }
 h3 {
   margin-top: 1em;
-  font-size: 123.1%;  
+  font-size: 117%;  
+}
+p {
+  margin: 0.5em 0;
 }
 a, a:visited {
   font-weight: normal;
@@ -89,19 +94,27 @@ a, a:visited {
   border: none;
 }
 a:hover {
-  color: #fff;
-  xbackground-color: #356;
-  text-decoration: none;
+  text-decoration: underline;
   border: none;
 }
 table {
   width: 100%;
+}
+ol, ul {
+  margin: 1em;
+}
+ol li {
+  margin: 0.5em;
+}
+img {
+  margin: 1em 0;
 }
 th {
   background-color: #356;
   color: #fff;
   padding: 0.25em;
   border: 0.1em solid #fff;
+  white-space: nowrap;
 }
 td {
   padding: 0.25em;
@@ -286,4 +299,7 @@ ul.components li {
   margin: 0;
   padding: 0.25em;
   line-height: 1.3em;
+}
+.legend {
+  font-size: 80%;
 }

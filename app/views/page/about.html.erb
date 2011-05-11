@@ -4,13 +4,31 @@
 	</div>
 </div>
 <div class="row">
-	<div class="fourcol">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor blandit ligula, ac viverra sem mattis nec. Fusce mollis aliquam enim, a placerat orci feugiat id. Etiam nisi ante, ullamcorper quis auctor et, consectetur quis risus. Curabitur neque nunc, dignissim consectetur sagittis vel, lacinia id quam. Integer ullamcorper odio quis mi consectetur vel mollis nisl ultricies. In in porttitor dolor. Donec ut felis elit. Vestibulum dui nisl, blandit sit amet pulvinar in, dapibus quis eros. Etiam pulvinar lacus ac nisl tempus eget dignissim ligula ullamcorper. Mauris sit amet ligula odio, non ullamcorper erat. Donec blandit aliquam mattis. Sed sem arcu, placerat ut auctor et, laoreet nec ligula. Cras faucibus ante non augue accumsan at cursus dui bibendum. Maecenas porttitor, orci vitae pretium semper, urna lectus facilisis neque, sed auctor nunc ante ac enim. Praesent quis molestie mauris.
+	<div class="sixcol">
+	  <h2>Introduction</h2>
+	  <p>Recent development of high throughput sequencing technology has opened a new era of personalized genomic medicine, with thousands of personal genomes expected to be sequenced by the end of 2011. There is a tremendous need for analyzing and interpreting this enormous amount of genomic information (consisting of millions of sequence variants per individual genome) for diagnosis and treatment in a disease-specific context.</p>
+	  <h2>How gKnome works</h2>
+	  <p>gKnome is a Whole Genome Sequencing analysis pipeline consisted of 3 major modules designed to filter for variants with functional impact, which enables the knowledge enrichment for diseases and pathways.
+	    <%= image_tag "flowchart.png"%><div class="legend">A flowchart of the genome sequence analysis pipeline illustrates that over 5 million variants (in log 10 scale) in a personal genome can be filtered down to hundreds of variants with functional impact in a list of candidate genes, enriched with biological processes and pathways</div></p>
   </div>
-  <div class="fourcol">
-    <p>Aliquam mauris eros, dictum sit amet pretium at, tincidunt condimentum libero. Pellentesque feugiat auctor massa, vitae placerat ipsum adipiscing sit amet. Nullam enim augue, faucibus et laoreet a, rhoncus a nulla. Morbi fringilla porta urna ac condimentum. Phasellus vitae lorem lectus, sed laoreet augue. Ut posuere augue in metus convallis luctus. Suspendisse sed vehicula tortor. Vestibulum neque est, interdum sed semper ut, porta vitae purus. Donec ac sollicitudin nunc. Suspendisse at tortor leo, sed eleifend felis. Sed elit velit, vehicula vitae vulputate et, rutrum id dui. Phasellus pretium laoreet tempus. Vivamus vel porttitor velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sem urna, aliquam sit amet sollicitudin vel, facilisis a lorem. Praesent ut lobortis risus. Maecenas dignissim mauris sit amet velit vulputate interdum. Vivamus id porttitor mi. Donec vestibulum ligula eu purus blandit et sagittis justo adipiscing.</p>
-  </div>
-  <div class="fourcol last">
-    <p>Fusce vehicula dictum ornare. Proin varius risus in tellus faucibus ut pellentesque odio ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse sit amet euismod massa. In id eros id augue blandit suscipit vel condimentum libero. Integer vitae convallis lacus. Morbi ornare lacinia mattis. Suspendisse quis dui et tortor consequat euismod. Donec eleifend gravida tempor. Nam congue ornare leo, vel malesuada elit adipiscing quis. In aliquam ligula ut tortor bibendum a blandit nulla mattis. Donec aliquam, ante sed lobortis pretium, ante arcu venenatis neque, ac pellentesque ante erat ut ante. Nam id est elit. Nulla ultrices orci orci, vitae volutpat mi. Curabitur at sem eget arcu consequat ullamcorper at vel justo. Morbi vel mi et leo ornare adipiscing. Proin et scelerisque leo. Fusce cursus rutrum nulla at dignissim. Donec ornare porta diam, sit amet luctus est ornare id.</p>
+
+  <div class="sixcol last">
+    <h2>gKnome compared to others</h2>
+    <p>Although early-generation programs such as ANNOVAR and Sequence Variant Analyzer (SVA)  provide basic tools to annotate and filter variants based on various criteria, they are limited in the following important areas:
+      <ol>
+        <li>Filter variants based on allele frequency according to different ethnic groups</li>
+        <li>Estimate functional impact of variants based on different gene models</li>
+        <li>Identify diseases and biological pathways likely to be implicated in the sample genomes</li>
+        <li>Interpret analysis results by comparing to healthy control genomes</li>
+        <li>Easy-to-use interface and publication-quality summary reports </li>
+      </ol>
+      </p>
+      <p>To address the above limitations, a bioinformatic analysis pipeline is currently being developed to study variants identified from whole-exome or whole-genome sequencing (WGS) with several analysis modules. The pipeline follows the current practice of WGS analysis as demonstrated in recent literature.</p>
+      <h2>Contact</h2>
+      <p>This analysis pipeline is being made available as a free web tool that can be used for analyzing and interpreting whole genome or exome sequencing data. For questions/comments, please contact: 
+      <ul>
+        <li><%= link_to "Michael Hsing", "mailto:michael.hsing@childrens.harvard.edu"%></p></li>
+        <li><%= link_to "Sek Won Kong", "mailto:swkong@enders.tch.harvard.edu"%></li>
+      </ul>
 	</div>
 </div>

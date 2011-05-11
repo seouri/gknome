@@ -2,18 +2,18 @@
 	<div class="twelvecol">
 	  <h1 class="home"><span class="logo">gKnome</span>
 		<span class="tagline">Whole Genome Sequencing Analysis Pipeline</span></h1>
+    <h2>Analysis Scenarios</h2>
     
   </div>
 </div>
 <div class="row">
 	<div class="eightcol">
-    <h2>Analysis Pipelines</h2>
-    <p>We provide four pre-defined analysis pipelines, each of which has different combination of analysis modules. You can also <%= link_to "select your own combination of analysis modules" %>.</p>
+    <p>gKnome pipeline analyzes data from Whole Genome Sequencing (WGS) or Whole Exome Sequencing (WES) experiments in one of four scenarios: 1) case vs. control, 2) case only with common, rare or unknown diseases, 3) family study and 4) healthy individual. The analysis modules and variant filtering criteria are configured differently to best fit each scenario.</p>
+    <p>gKnome provides summary reports at <%= link_to "genome", genome_path(1) %>, <%= link_to "gene", genes_path %>, and <%= link_to "disease", diseases_path %>/<%= link_to "biological process", processes_path %> levels.</p>
 	</div>
 	<div class="fourcol last">
-	  <h3 class="pipeline"></h3>
 	  <button class="pipeline">Case / Control</button>
-	  <button class="pipeline">Cases only</button>
+	  <button class="pipeline">Case only</button>
 	  <button class="pipeline">Family study</button>
 	  <button class="pipeline">Healthy</button>
 	</div>
@@ -22,7 +22,7 @@
 <div class="row">
 	<div class="twelvecol">
     <h2>Overview of Workflow</h2>
-    <p>The analysis pipeline is consisted of 3 major modules designed to filter for variants with functional impact, which enables the knowledge enrichment for diseases and pathways. </p>
+    <p>The analysis pipeline is consisted of 3 major modules designed to filter variants based on allele frequency and functional impact, and to enable knowledge enrichment for diseases and pathways.</p>
   </div>
 </div>
 
@@ -54,5 +54,15 @@
 	    <li>Pathways</li>
 	    <li>Biological Processes</li>
 	  </ul>
+	</div>
+</div>
+<div class="row">
+	<div class="twelvecol">
+	  <h3>Contact</h3>
+	  <p>This analysis pipeline is being made available as a free web tool that can be used for analyzing and interpreting whole genome or exome sequencing data. For questions/comments, please contact: 
+    <ul>
+      <li><%= link_to "Michael Hsing", "mailto:michael.hsing@childrens.harvard.edu"%></p></li>
+      <li><%= link_to "Sek Won Kong", "mailto:swkong@enders.tch.harvard.edu"%></li>
+    </ul>
 	</div>
 </div>
