@@ -1,0 +1,36 @@
+<div class="row">
+	<div class="twelvecol">
+<h1>Genome Summary</h1>
+
+  </div>
+</div>
+
+<% ["gene_components", "impacts", "allele_frequencies"].each do |type| %>
+<div class="row">
+	<div class="twelvecol"><h3><%= type.titleize %></h3></div>
+</div>
+<div class="row">
+	<div class="sixcol">
+<table>
+  <tr>
+    <td></td>
+    <th>Variants</th>
+    <th>Proportion (%)</th>
+  </tr>
+  <% @genome.send("#{type}_labels").each_index do |index| %>
+  <tr>
+    <th><%= @genome.send("#{type}_labels")[index].titleize %></th>
+    <td class="number"><%= number_with_delimiter(@genome.send(type)[index]) %></td>
+    <td class="number"><%= number_with_precision(@genome.send("#{type}_percentage")[index], :precision => 2) %></td>
+  </tr>
+  <% end %>
+</table>
+  </div>
+  <div class="sixcol last">
+	
+  <%= send("#{type.singularize}_graph", @genome) %>
+  </div>
+</div>
+<% end %>
+
+

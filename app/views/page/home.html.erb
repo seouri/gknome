@@ -2,134 +2,57 @@
 	<div class="twelvecol">
 	  <h1 class="home"><span class="logo">gKnome</span>
 		<span class="tagline">Whole Genome Sequencing Analysis Pipeline</span></h1>
-    <h1>Disease Enrichment Analysis</h1>
-    <h2>Analysis Pipelines</h2>
-    <p>We provide the following six pre-defined analysis pipelines, each of which has different combination of analysis modules. You can also <%= link_to "select your own combination of analysis modules" %>.</p>
+    
   </div>
 </div>
 <div class="row">
-	<div class="twocol">
-	  <h3 class="pipeline">Case / Control</h3>
-	  <ol class="modules">
-      <li>Allele Frequency</li>
-      <li>Functional Annotation</li>
-      <li>Disease Association</li>
-      <li>Biological Process &amp; Pathway</li>
-      <li>Allele Zygosity</li>
-	  </ol>
-	  <button class="pipeline">Start!</button>
+	<div class="eightcol">
+    <h2>Analysis Pipelines</h2>
+    <p>We provide four pre-defined analysis pipelines, each of which has different combination of analysis modules. You can also <%= link_to "select your own combination of analysis modules" %>.</p>
 	</div>
-	<div class="twocol">
-	  <h3 class="pipeline">Cases only</h3>
-	  <ol class="modules">
-      <li>Allele Frequency</li>
-      <li>Functional Annotation</li>
-      <li>Disease Association</li>
-      <li>Biological Process &amp; Pathway</li>
-	  </ol>
-	  <button class="pipeline">Start!</button>
-	</div>
-	<div class="twocol">
-	  <h3 class="pipeline">Rare disease with known cause</h3>
-	  <ol class="modules">
-      <li>Allele Frequency</li>
-      <li>Functional Annotation</li>
-      <li>Allele Zygosity</li>
-      <li>Sequence Features</li>
-      <li>Disease Association</li>
-      <li>Biological Process &amp; Pathway</li>
-	  </ol>
-	  <button class="pipeline">Start!</button>
-	</div>
-	<div class="twocol">
-	  <h3 class="pipeline">Rare disease with unknown cause</h3>
-	  <ol class="modules">
-      <li>Allele Frequency</li>
-      <li>Sequence Features</li>
-      <li>Functional Annotation</li>
-      <li>Biological Process &amp; Pathway</li>
-      <li>Disease Association</li>
-	  </ol>
-	  <button class="pipeline">Start!</button>
-	</div>
-	<div class="twocol">
-	  <h3 class="pipeline">Family study</h3>
-	  <ol class="modules">
-      <li>Allele Zygosity</li>
-      <li>Sequence Features</li>
-      <li>Biological Process &amp; Pathway</li>
-      <li>Disease Association</li>
-	  </ol>
-	  <button class="pipeline">Start!</button>
-	</div>
-	<div class="twocol last">
-	  <h3 class="pipeline">Healthy</h3>
-	  <ol class="modules">
-      <li>Allele Frequency</li>
-      <li>Sequence Features</li>
-      <li>Functional Annotation</li>
-      <li>Biological Process &amp; Pathway</li>
-      <li>Disease Association</li>
-	  </ol>
-	  <button class="pipeline">Start!</button>
+	<div class="fourcol last">
+	  <h3 class="pipeline"></h3>
+	  <button class="pipeline">Case / Control</button>
+	  <button class="pipeline">Cases only</button>
+	  <button class="pipeline">Family study</button>
+	  <button class="pipeline">Healthy</button>
 	</div>
 </div>
 
 <div class="row">
 	<div class="twelvecol">
-    <h2 class="module">Analysis Modules</h2>
-    <p>We provide the following six analysis modules, which can be used by itself or in combination with other modules as in the analysis pipelines.</p>
+    <h2>Overview of Workflow</h2>
+    <p>The analysis pipeline is consisted of 3 major modules designed to filter for variants with functional impact, which enables the knowledge enrichment for diseases and pathways. </p>
   </div>
 </div>
 
 <div class="row">
-	<div class="twocol">
-	  <h3 class="module">Allele Frequency</h3>
-	  <ol class="components">
+	<div class="fourcol">
+	  <h3>1. Allele Frequency</h3>
+	  <ul class="modules">
+      <li>ethnicity (EUR, AFR, ASN)</li>
 	    <li>dbSNP132</li>
 	    <li>1000 genomes</li>
 	    <li>200 exomes</li>
-	    <li>60 &times; CGI genomes</li>
-	  </ol>
+	    <li>69 &times; CGI genomes</li>
+	  </ul>
 	</div>
-	<div class="twocol">
-	  <h3 class="module">Functional Annotation</h3>
-	  <ol class="components">
-      <li>Coding genes (RefSeq)</li>
+	<div class="fourcol">
+	  <h3>2. Functional Impact</h3>
+	  <ul class="modules">
+      <li>Protein Coding genes (RefSeq)</li>
       <li>Non-coding (miRNA, TFBS)</li>
-      <li>Functtional impact prediction (polyphen2, SIFT)</li>
-	  </ol>
+      <li>Functtional impact prediction</li>
+	    <li>Sequence Conservations (PhastCons)</li>
+	    <li>Repeat Sequences</li>
+	  </ul>
 	</div>
-	<div class="twocol">
-	  <h3 class="module">Biological Process &amp; Pathway</h3>
-	  <ol class="components">
+	<div class="fourcol last">
+	  <h3>3. Knowledge Enrichment</h3>
+	  <ul class="modules">
+      <li>Disease Association</li>
 	    <li>Pathways</li>
-	    <li>GO terms</li>
-	  </ol>
-	</div>
-	<div class="twocol">
-	  <h3 class="module">Disease Association</h3>
-	  <ol class="components">
-	    <li>HGMD</li>
-	    <li>GWAS</li>
-	    <li>OMIM</li>
-	    <li>PharmGKB</li>
-	    <li>PubMed</li>
-	  </ol>
-	</div>
-	<div class="twocol">
-	  <h3 class="module">Allele Zygosity</h3>
-	  <ol class="components">
-	    <li>homozygous</li>
-	    <li>heterozygous</li>
-	  </ol>
-	</div>
-	<div class="twocol last">
-	  <h3 class="module">Sequence Features</h3>
-	  <ol class="components">
-	    <li>Conservations (PhastCons)</li>
-	    <li>Repeat</li>
-	    <li>Segmental duplication</li>
-	  </ol>
+	    <li>Biological Processes</li>
+	  </ul>
 	</div>
 </div>

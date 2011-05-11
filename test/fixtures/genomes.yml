@@ -1,0 +1,55 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  unique_variants: 1
+  allele_frequency_common: 1
+  allele_frequency_less_common: 1
+  allele_frequency_rare: 1
+  allele_frequency_novel: 1
+  gene_component_3UTR: 1
+  gene_component_5UTR: 1
+  gene_component_CDS: 1
+  gene_component_intergenic: 1
+  gene_component_intron: 1
+  gene_component_splice_site: 1
+  impact_disrupt: 1
+  impact_frameshift: 1
+  impact_in-frame-deletion: 1
+  impact_in-frame-insertion: 1
+  impact_missense: 1
+  impact_misstart: 1
+  impact_nonsense: 1
+  impact_nonstop: 1
+  impact_synonymous: 1
+  impact_unknown: 1
+  varType_del: 1
+  varType_ins: 1
+  varType_snp: 1
+  varType_sub: 1
+
+two:
+  unique_variants: 1
+  allele_frequency_common: 1
+  allele_frequency_less_common: 1
+  allele_frequency_rare: 1
+  allele_frequency_novel: 1
+  gene_component_3UTR: 1
+  gene_component_5UTR: 1
+  gene_component_CDS: 1
+  gene_component_intergenic: 1
+  gene_component_intron: 1
+  gene_component_splice_site: 1
+  impact_disrupt: 1
+  impact_frameshift: 1
+  impact_in-frame-deletion: 1
+  impact_in-frame-insertion: 1
+  impact_missense: 1
+  impact_misstart: 1
+  impact_nonsense: 1
+  impact_nonstop: 1
+  impact_synonymous: 1
+  impact_unknown: 1
+  varType_del: 1
+  varType_ins: 1
+  varType_snp: 1
+  varType_sub: 1

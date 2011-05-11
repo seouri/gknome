@@ -7,11 +7,12 @@ unless ($#ARGV == 1) {
 
 my ($input, $genome_id) = @ARGV;
 
+my $id = 0;
 open(FH, "< $input") or die("Can't read $input: $!\n");
 open(RE, "> tmp/results.dat") or die("Can't write tmp/results.dat: $!\n");
 my $head = <FH>;
 while (<FH>) {
-  print RE join("\t", $genome_id, $_);
+  print RE join("\t", ++$id, $genome_id, $_);
 }
 close RE;
 close FH;

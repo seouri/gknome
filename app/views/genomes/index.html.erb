@@ -1,0 +1,71 @@
+<h1>Listing genomes</h1>
+
+<table>
+  <tr>
+    <th>Unique variants</th>
+    <th>Allele frequency common</th>
+    <th>Allele frequency less common</th>
+    <th>Allele frequency rare</th>
+    <th>Allele frequency novel</th>
+    <th>Gene component 3utr</th>
+    <th>Gene component 5utr</th>
+    <th>Gene component cds</th>
+    <th>Gene component intergenic</th>
+    <th>Gene component intron</th>
+    <th>Gene component splice site</th>
+    <th>Impact disrupt</th>
+    <th>Impact frameshift</th>
+    <th>Impact in-frame-deletion</th>
+    <th>Impact in-frame-insertion</th>
+    <th>Impact missense</th>
+    <th>Impact misstart</th>
+    <th>Impact nonsense</th>
+    <th>Impact nonstop</th>
+    <th>Impact synonymous</th>
+    <th>Impact unknown</th>
+    <th>Vartype del</th>
+    <th>Vartype ins</th>
+    <th>Vartype snp</th>
+    <th>Vartype sub</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @genomes.each do |genome| %>
+  <tr>
+    <td><%= genome.unique_variants %></td>
+    <td><%= genome.allele_frequency_common %></td>
+    <td><%= genome.allele_frequency_less_common %></td>
+    <td><%= genome.allele_frequency_rare %></td>
+    <td><%= genome.allele_frequency_novel %></td>
+    <td><%= genome.gene_component_3UTR %></td>
+    <td><%= genome.gene_component_5UTR %></td>
+    <td><%= genome.gene_component_CDS %></td>
+    <td><%= genome.gene_component_intergenic %></td>
+    <td><%= genome.gene_component_intron %></td>
+    <td><%= genome.gene_component_splice_site %></td>
+    <td><%= genome.impact_disrupt %></td>
+    <td><%= genome.impact_frameshift %></td>
+    <td><%= genome.impact_in_frame_deletion %></td>
+    <td><%= genome.impact_in_frame_insertion %></td>
+    <td><%= genome.impact_missense %></td>
+    <td><%= genome.impact_misstart %></td>
+    <td><%= genome.impact_nonsense %></td>
+    <td><%= genome.impact_nonstop %></td>
+    <td><%= genome.impact_synonymous %></td>
+    <td><%= genome.impact_unknown %></td>
+    <td><%= genome.varType_del %></td>
+    <td><%= genome.varType_ins %></td>
+    <td><%= genome.varType_snp %></td>
+    <td><%= genome.varType_sub %></td>
+    <td><%= link_to 'Show', genome %></td>
+    <td><%= link_to 'Edit', edit_genome_path(genome) %></td>
+    <td><%= link_to 'Destroy', genome, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Genome', new_genome_path %>

@@ -4,4 +4,13 @@ class PageController < ApplicationController
 
   def about
   end
+
+  def genes
+  end
+
+  def diseases
+  end
+
+  def summary
+  end
 end

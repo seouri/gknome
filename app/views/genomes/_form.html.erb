@@ -1,0 +1,117 @@
+<%= form_for(@genome) do |f| %>
+  <% if @genome.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@genome.errors.count, "error") %> prohibited this genome from being saved:</h2>
+
+      <ul>
+      <% @genome.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :unique_variants %><br />
+    <%= f.text_field :unique_variants %>
+  </div>
+  <div class="field">
+    <%= f.label :allele_frequency_common %><br />
+    <%= f.text_field :allele_frequency_common %>
+  </div>
+  <div class="field">
+    <%= f.label :allele_frequency_less_common %><br />
+    <%= f.text_field :allele_frequency_less_common %>
+  </div>
+  <div class="field">
+    <%= f.label :allele_frequency_rare %><br />
+    <%= f.text_field :allele_frequency_rare %>
+  </div>
+  <div class="field">
+    <%= f.label :allele_frequency_novel %><br />
+    <%= f.text_field :allele_frequency_novel %>
+  </div>
+  <div class="field">
+    <%= f.label :gene_component_3UTR %><br />
+    <%= f.text_field :gene_component_3UTR %>
+  </div>
+  <div class="field">
+    <%= f.label :gene_component_5UTR %><br />
+    <%= f.text_field :gene_component_5UTR %>
+  </div>
+  <div class="field">
+    <%= f.label :gene_component_CDS %><br />
+    <%= f.text_field :gene_component_CDS %>
+  </div>
+  <div class="field">
+    <%= f.label :gene_component_intergenic %><br />
+    <%= f.text_field :gene_component_intergenic %>
+  </div>
+  <div class="field">
+    <%= f.label :gene_component_intron %><br />
+    <%= f.text_field :gene_component_intron %>
+  </div>
+  <div class="field">
+    <%= f.label :gene_component_splice_site %><br />
+    <%= f.text_field :gene_component_splice_site %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_disrupt %><br />
+    <%= f.text_field :impact_disrupt %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_frameshift %><br />
+    <%= f.text_field :impact_frameshift %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_in-frame-deletion %><br />
+    <%= f.text_field :impact_in-frame-deletion %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_in-frame-insertion %><br />
+    <%= f.text_field :impact_in-frame-insertion %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_missense %><br />
+    <%= f.text_field :impact_missense %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_misstart %><br />
+    <%= f.text_field :impact_misstart %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_nonsense %><br />
+    <%= f.text_field :impact_nonsense %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_nonstop %><br />
+    <%= f.text_field :impact_nonstop %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_synonymous %><br />
+    <%= f.text_field :impact_synonymous %>
+  </div>
+  <div class="field">
+    <%= f.label :impact_unknown %><br />
+    <%= f.text_field :impact_unknown %>
+  </div>
+  <div class="field">
+    <%= f.label :varType_del %><br />
+    <%= f.text_field :varType_del %>
+  </div>
+  <div class="field">
+    <%= f.label :varType_ins %><br />
+    <%= f.text_field :varType_ins %>
+  </div>
+  <div class="field">
+    <%= f.label :varType_snp %><br />
+    <%= f.text_field :varType_snp %>
+  </div>
+  <div class="field">
+    <%= f.label :varType_sub %><br />
+    <%= f.text_field :varType_sub %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
