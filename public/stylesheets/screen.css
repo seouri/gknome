@@ -238,7 +238,7 @@ ul.modules {
   border-radius: 3px;
   min-height: 7em;
   margin: 0.5em 0;
-  padding: 0.25em 0.25em 0 0.25em;
+  padding: 0 0.25em;
   list-style: none;
 }
 ul.components {
@@ -268,12 +268,16 @@ ul.modules li {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 77%;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.24em;
   padding: 0.25em 0;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
   text-align: center;
   text-shadow: 0 1px 0 #356;
   width: 100%;
+}
+
+ul.modules li p {
+  margin: 0.6em 0;
 }
 ul.components li {
   line-height: 1.5em;
